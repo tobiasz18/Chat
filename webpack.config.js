@@ -1,5 +1,7 @@
-const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const path = require('path');
 
 module.exports = {
     entry: './client/index.js',
@@ -33,6 +35,7 @@ module.exports = {
             template: 'client/index.html',
             filename: 'index.html',
             inject: 'body'
-        })
+        }),
+        new webpack.optimize.UglifyJsPlugin()
     ]
 };
