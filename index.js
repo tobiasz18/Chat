@@ -1,6 +1,6 @@
 const express = require('express');
 const http = require('http');
-const socketIo = require('socekt.io');
+const socketIo = require('socket.io');
 
 const app = express();
 const server = http.createServer(app);
@@ -9,10 +9,11 @@ const io = socketIo(server);
 const UsersService = require('./UsersService');
 const userService = new UsersService();
 
-app.use(express.static(__dirname + '/public'));
+
+app.use(express.static('public'));
 
 app.get('/', function(req, res) {
-    res.sendFile(__dirname + '/index.html')
+    res.sendFile('/index.html')
 });
 
 io.on('connection', function(socket) {

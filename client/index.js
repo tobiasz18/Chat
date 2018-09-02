@@ -1,3 +1,7 @@
-var f = ([a, b] = [1, 2], {x: c} = {x: a + b}) => a + b + c;
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App.js';
 
-console.log(f())
+ReactDOM.render(
+    <App />, document.getElementById('app')
+);
