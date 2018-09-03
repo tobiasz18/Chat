@@ -3,8 +3,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeJsPlugin = require('optimize-js-plugin');
 const path = require('path');
+const env = process.env.NODE_ENV || 'development';
 
-module.exports = {
+config = {
     entry: './client/index.js',
     output: {
         filename: './bundle.js',
@@ -37,9 +38,18 @@ module.exports = {
             filename: 'index.html',
             inject: 'body'
         }),
+    ]
+};
+
+console.log('NODE_ENV: ', env);
+
+if(env === 'production') {
+    config.plugins.push(
         new webpack.optimize.UglifyJsPlugin(),
         new OptimizeJsPlugin({
             sourceMap: false
         })
-    ]
-};
+    )
+}
+
+module.exports = config;
