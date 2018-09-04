@@ -6,7 +6,10 @@ const path = require('path');
 const env = process.env.NODE_ENV || 'development';
 
 config = {
-    entry: './client/index.js',
+    entry: [
+        'react-hot-loader/patch',
+        './client/index.js'
+    ],
     output: {
         filename: './bundle.js',
         path: path.join(__dirname, 'public'),

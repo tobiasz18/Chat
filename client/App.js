@@ -4,7 +4,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <h1>Hellow test here</h1>
+                <h1>Hellow tests</h1>
             </div>
         )
     }
