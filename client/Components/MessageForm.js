@@ -25,7 +25,7 @@ class MessageForm extends Component {
         return(
             <form className={styles.MessageForm} onSubmit={e => this.handleSubmit(e)}>
                 <input
-                    classNme={styles.MessageInput}
+                    className={styles.MessageInput}
                     onChange={e => this.changeHandler(e)}
                     value={this.state.text}
                     placeholder="Message"

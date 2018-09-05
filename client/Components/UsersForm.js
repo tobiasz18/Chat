@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import styles from '../styles/UserForm.css';
+import styles from '../styles/UsersForm.css';
 
-class UserForm extends Component {
+class UsersForm extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -22,16 +22,19 @@ class UserForm extends Component {
 
     render() {
         return (
+            <div>
+            <h1>Join to public Chat</h1>
             <form className={styles.UserForm} onSubmit={e => this.handleSubmit(e)}>
                 <input
                     className = {styles.UserInput}
                     placeholder="Write your nickname and press enter"
-                    onchage={e => this.handleChage(e)}
+                    onChange={e => this.handleChange(e)}
                     value={this.state.name}
                 />
             </form>
+            </div>
         )
     }
 }
 
-export default UserForm;
+export default UsersForm;

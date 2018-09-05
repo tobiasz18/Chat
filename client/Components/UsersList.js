@@ -4,7 +4,7 @@ import styles from '../styles/UsersList.css';
 const UsersList = props => (
     <div className={styles.users}>
         <div className={styles.UsersOnline}>
-            {prosp.users.length} people online
+            {props.users.length} people online
         </div>
         <ul className={styles.UsersList}>
             {
@@ -14,7 +14,7 @@ const UsersList = props => (
                             {user.name}
                         </li>
                     );
-                });
+                })
             }
         </ul>
     </div>

@@ -3,8 +3,8 @@ import io from 'socket.io-client';
 //components
 import MessageForm from './MessageForm';
 import MessageList from './MessageList';
-import UserList from './UserList';
-import UserForm from './UserForm';
+import UsersList from './UsersList';
+import UsersForm from './UsersForm';
 
 import styles from '../styles/App.css';
 
@@ -48,7 +48,7 @@ class App extends Component {
 
     render() {
         return (
-            this.state.name !== '' ? this.renderLayout() : this.renderUserForm();
+            this.state.name !== '' ? this.renderLayout() : this.renderUserForm()
         )
     }
 
@@ -82,7 +82,7 @@ class App extends Component {
     }
 
     renderUserForm() {
-        return (<UserForm onUserSubmit={name => this.handleUserSubmit(name)} />)
+        return (<UsersForm onUserSubmit={name => this.handleUserSubmit(name)} />)
     }
 
 }
