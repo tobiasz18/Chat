@@ -20869,15 +20869,15 @@ var UsersForm = function (_Component) {
                 'div',
                 null,
                 _react2.default.createElement(
-                    'h1',
-                    null,
-                    'Join to public Chat'
-                ),
-                _react2.default.createElement(
                     'form',
                     { className: _UsersForm2.default.UserForm, onSubmit: function onSubmit(e) {
                             return _this2.handleSubmit(e);
                         } },
+                    _react2.default.createElement(
+                        'h1',
+                        null,
+                        'Join to public Chat'
+                    ),
                     _react2.default.createElement('input', {
                         className: _UsersForm2.default.UserInput,
                         placeholder: 'Write your nickname and press enter',
@@ -20969,7 +20969,7 @@ exports = module.exports = __webpack_require__(6)(false);
 
 
 // module
-exports.push([module.i, "._3q3gdNGRMGDMee6dXMDLWn {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    width: 100vw;\r\n    height: 100vh;\r\n}\r\n\r\n._2XsUIvcSqKSF9hKixE9z0k {\r\n    padding: 20px;\r\n    font-size: 2em;\r\n    border: 0;\r\n    border-bottom: 1px solid #82888c;\r\n    width: 580px;\r\n}\r\n", ""]);
+exports.push([module.i, "._3q3gdNGRMGDMee6dXMDLWn {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    flex-direction: column;\r\n    width: 100vw;\r\n    height: 100vh;\r\n}\r\n\r\n._2XsUIvcSqKSF9hKixE9z0k {\r\n    padding: 20px;\r\n    font-size: 2em;\r\n    border: 0;\r\n    border-bottom: 1px solid #82888c;\r\n    width: 580px;\r\n}\r\n\r\nh1 {\r\n    display: flex;\r\n    justify-content: center;\r\n    text-transform: uppercase;\r\n    letter-spacing: 0.05em;\r\n    color: #82888c;\r\n}\r\n", ""]);
 
 // exports
 exports.locals = {

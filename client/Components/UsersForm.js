@@ -23,8 +23,9 @@ class UsersForm extends Component {
     render() {
         return (
             <div>
-            <h1>Join to public Chat</h1>
+
             <form className={styles.UserForm} onSubmit={e => this.handleSubmit(e)}>
+                <h1>Join to public Chat</h1> 
                 <input
                     className = {styles.UserInput}
                     placeholder="Write your nickname and press enter"
