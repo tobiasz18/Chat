@@ -9,7 +9,6 @@ const io = socketIo(server);
 const UsersService = require('./UsersService');
 const userService = new UsersService();
 
-
 app.use(express.static('public'));
 
 app.get('/', function(req, res) {
@@ -25,6 +24,7 @@ io.on('connection', function(socket) {
         });
         /*application is emitting an 'update' event that updates information about
         list of users to each listener to event 'update'*/
+
         io.emit('update',{
             users: userService.getAllUsers()
         });

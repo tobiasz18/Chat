@@ -1,5 +1,5 @@
 class UsersService {
-    construction() {
+    constructor() {
         this.users = [];
     }
 
@@ -7,7 +7,7 @@ class UsersService {
         return this.users;
     }
 
-    getUserById() {
+    getUserById(userId) {
         return this.users.find(user => user.id === userId);
     }
 

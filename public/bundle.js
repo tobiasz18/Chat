@@ -20425,10 +20425,13 @@ exports = module.exports = __webpack_require__(6)(false);
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "._2xqGZ4r6PXMJ4OWZ0kMKCk {\r\n    display: flex;\r\n    flex-direction: row;\r\n    width: 60%;\r\n}\r\n\r\n._8uDtvSEDS85X45Fb7t-fK {\r\n    flex: 1;\r\n    padding: 20px;\r\n    border: 0;\r\n    border-top: 1px solid #ccc;\r\n}\r\n", ""]);
 
 // exports
-
+exports.locals = {
+	"MessageForm": "_2xqGZ4r6PXMJ4OWZ0kMKCk",
+	"MessageInput": "_8uDtvSEDS85X45Fb7t-fK"
+};
 
 /***/ }),
 /* 86 */
@@ -20663,10 +20666,13 @@ exports = module.exports = __webpack_require__(6)(false);
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".eN8sxPU06Ljd_KIeBozeG {\r\n    flex: 1;\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n    /*width: 60vw;*/\r\n    padding: 20px;\r\n}\r\n\r\n.YRxEQ-u9Nn6B5F7jTRL3g {\r\n    margin: 10px;\r\n    padding: 10px;\r\n    width: 210px;\r\n    background: #99cbed;\r\n    border-top-right-radius: 5px;\r\n    border-bottom-right-radius: 5px;\r\n    border-top-left-radius: 10px;\r\n    word-wrap:  break-word;\r\n}\r\n\r\nspan {\r\n    margin-left: 5px;\r\n}\r\n", ""]);
 
 // exports
-
+exports.locals = {
+	"MessageList": "eN8sxPU06Ljd_KIeBozeG",
+	"Message": "YRxEQ-u9Nn6B5F7jTRL3g"
+};
 
 /***/ }),
 /* 90 */
@@ -20788,10 +20794,15 @@ exports = module.exports = __webpack_require__(6)(false);
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "._2nRDvjjqVyYFG3qlwe6-CL {\r\n    display: flex;\r\n    flex: 1;\r\n    width: 25vw;\r\n    justify-content: flex-start;\r\n    flex-direction: column;\r\n    border-right: 1px solid #ccc;\r\n}\r\n\r\n._3BvzknyqLAnbVasKMlho8u {\r\n    padding: 20px;\r\n    text-align: center;\r\n    background: #ccc;\r\n\r\n}\r\n\r\n._3amxlBKZOSsef1yQYFEen1 {\r\n    margin: 0;\r\n    padding: 0;\r\n\r\n}\r\n\r\n._3mt3vXepVH5Sk-pwlnclNX {\r\n    list-style: none;\r\n    border-bottom: 1px solid #ccc;\r\n    padding: 20px;\r\n    margin: 0 0 0 20px;\r\n}\r\n", ""]);
 
 // exports
-
+exports.locals = {
+	"Users": "_2nRDvjjqVyYFG3qlwe6-CL",
+	"UsersOnline": "_3BvzknyqLAnbVasKMlho8u",
+	"UsersList": "_3amxlBKZOSsef1yQYFEen1",
+	"UserItem": "_3mt3vXepVH5Sk-pwlnclNX"
+};
 
 /***/ }),
 /* 93 */
@@ -20855,18 +20866,27 @@ var UsersForm = function (_Component) {
             var _this2 = this;
 
             return _react2.default.createElement(
-                'form',
-                { className: _UsersForm2.default.UserForm, onSubmit: function onSubmit(e) {
-                        return _this2.handleSubmit(e);
-                    } },
-                _react2.default.createElement('input', {
-                    className: _UsersForm2.default.UserInput,
-                    placeholder: 'Write your nickname and press enter',
-                    onChange: function onChange(e) {
-                        return _this2.handleChange(e);
-                    },
-                    value: this.state.name
-                })
+                'div',
+                null,
+                _react2.default.createElement(
+                    'h1',
+                    null,
+                    'Join to public Chat'
+                ),
+                _react2.default.createElement(
+                    'form',
+                    { className: _UsersForm2.default.UserForm, onSubmit: function onSubmit(e) {
+                            return _this2.handleSubmit(e);
+                        } },
+                    _react2.default.createElement('input', {
+                        className: _UsersForm2.default.UserInput,
+                        placeholder: 'Write your nickname and press enter',
+                        onChange: function onChange(e) {
+                            return _this2.handleChange(e);
+                        },
+                        value: this.state.name
+                    })
+                )
             );
         }
     }]);
@@ -20949,10 +20969,13 @@ exports = module.exports = __webpack_require__(6)(false);
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "._3q3gdNGRMGDMee6dXMDLWn {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    width: 100vw;\r\n    height: 100vh;\r\n}\r\n\r\n._2XsUIvcSqKSF9hKixE9z0k {\r\n    padding: 20px;\r\n    font-size: 2em;\r\n    border: 0;\r\n    border-bottom: 1px solid #82888c;\r\n    width: 580px;\r\n}\r\n", ""]);
 
 // exports
-
+exports.locals = {
+	"UserForm": "_3q3gdNGRMGDMee6dXMDLWn",
+	"UserInput": "_2XsUIvcSqKSF9hKixE9z0k"
+};
 
 /***/ }),
 /* 96 */
@@ -21013,10 +21036,17 @@ exports = module.exports = __webpack_require__(6)(false);
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "body {\r\n    margin: 0;\r\n        font-family: \"Calibri\", \"Arial\", \"Helvetica\", sans-serif;\r\n}\r\n\r\n.jbhcemyHYTbx5fEei-zsJ {\r\n    display: flex;\r\n    flex-direction: column;\r\n    flex: 1;\r\n    width: 750px;\r\n    height: 70vh;\r\n    margin: auto;\r\n    box-shadow: 5px 5px 2px #888888;\r\n}\r\n\r\n._2QC2fPyXI1G6Bvxrl7mIjU {\r\n    display: flex;\r\n    flex-direction: row;\r\n    align-items: center;\r\n    border-bottom: 1px solid #82888c;\r\n}\r\n\r\n.idQtPhOxm8ChXmn02C1gt {\r\n    display: flex;\r\n    width: 25vh;\r\n    justify-content: center;\r\n    background: #272727;\r\n    box-sizing: border-box;\r\n    color: white;\r\n    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\r\n    padding: 20px;\r\n}\r\n\r\n._81lo0vSwS-ms2sNenIqpe {\r\n    display: flex;\r\n    width: 75vw;\r\n    justify-content: center;\r\n    box-sizing: border-box;\r\n    color: white;\r\n    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\r\n    background: #272727;\r\n    padding: 20px;\r\n}\r\n\r\n._3YUx8JytarMvtWLW3nJx9a {\r\n    display: flex;\r\n    flex: 1;\r\n    flex-direction: row;\r\n}\r\n\r\n._2GwyU9ywf077Za5Kz3o4oK {\r\n    display: flex;\r\n    flex-direction: column;\r\n    flex: 1;\r\n    width: 75vw;\r\n}\r\n", ""]);
 
 // exports
-
+exports.locals = {
+	"App": "jbhcemyHYTbx5fEei-zsJ",
+	"AppHeader": "_2QC2fPyXI1G6Bvxrl7mIjU",
+	"AppTitle": "idQtPhOxm8ChXmn02C1gt",
+	"AppRoom": "_81lo0vSwS-ms2sNenIqpe",
+	"AppBody": "_3YUx8JytarMvtWLW3nJx9a",
+	"MessageWrapper": "_2GwyU9ywf077Za5Kz3o4oK"
+};
 
 /***/ }),
 /* 98 */
