@@ -11,7 +11,6 @@ const UsersList = props => (
 
             {
                 props.users.map((user) => {
-                    console.log(user,'asddsa')
                     return (
                         <li key={user.id} className={styles.UserItem}>
                             {user.name}
